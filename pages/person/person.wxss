@@ -6,16 +6,16 @@
   height: 80rpx;
   background-color: #F5F5F5;
   padding: 20rpx 40rpx;
-  /*内边距*/
-  margin: 30rpx 60rpx;
+  /* 内边距 */
+  margin: 20rpx 60rpx;
   /*外边距*/
   border-radius: 30rpx;
-    /*圆角边框*/
+  /*圆角边框*/
 }
 
 .myleft {
   height: 80rpx;
-  width:80rpx;
+  width: 80rpx;
 }
 
 .mycenter {
@@ -25,8 +25,8 @@
 
 .myright {
   height: 80rpx;
-  width:80rpx;
-  margin-left:240rpx;
+  width: 80rpx;
+  margin-left: 240rpx;
 }
 
 /**index.wxss**/
@@ -36,17 +36,16 @@
   align-items: center;
 }
 
+/*用户头像*/
 .userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
+  width: 180rpx;
+  height: 180rpx;
+  margin: 15rpx;
   border-radius: 50%;
 }
 
+/*用户名*/
 .userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
+  color: #A9A9A9;
+  font-size: 36rpx;
 }
