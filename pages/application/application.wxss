@@ -1,0 +1,24 @@
+/* pages/application/application.wxss */
+.boxMode1 {
+  width: 750rpx;
+  height: 500rpx;
+  border-top: 5rpx solid #A9A9A9;
+  border-bottom: 5rpx solid #A9A9A9;
+}
+
+.title_border {
+  display: flex;
+  flex-direction: row;
+  width: 235rpx;
+  height: 55rpx;
+  background-color: #FAFAD2;
+  padding-left: 5rpx;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  border-radius: 10rpx;
+}
+
+.title {
+  font-size: 45rpx;
+  font-family: "FangSong";
+}

@@ -1,0 +1,63 @@
+/* pages/person/person.wxss */
+.boxMode1 {
+  display: flex;
+  flex-direction: row;
+  width: 550rpx;
+  height: 80rpx;
+  background-color: #F5F5F5;
+  padding: 20rpx 40rpx;
+  /* 内边距 */
+  margin: 20rpx 60rpx;
+  /*外边距*/
+  border-radius: 30rpx;
+  /*圆角边框*/
+}
+
+.myleft {
+  height: 80rpx;
+  width: 80rpx;
+}
+
+.mycenter {
+  font-size: 60rpx;
+  margin-left: 30rpx;
+}
+
+.myright {
+  height: 80rpx;
+  width: 80rpx;
+  margin-left: 240rpx;
+}
+
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*用户头像*/
+.userinfo-avatar {
+  width: 180rpx;
+  height: 180rpx;
+  margin: 15rpx;
+  border-radius: 50%;
+}
+
+/*用户名*/
+.userinfo-nickname {
+  color: #A9A9A9;
+  font-size: 36rpx;
+}
+
+/**app.wxss**/
+.boxMode2 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 170rpx;
+  padding-bottom: 190rpx;
+  box-sizing: border-box;
+} 
