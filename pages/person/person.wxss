@@ -1,63 +1,82 @@
-/* pages/person/person.wxss */
-.boxMode1 {
-  display: flex;
-  flex-direction: row;
-  width: 550rpx;
-  height: 80rpx;
-  background-color: #F5F5F5;
-  padding: 20rpx 40rpx;
-  /* 内边距 */
-  margin: 20rpx 60rpx;
-  /*外边距*/
-  border-radius: 30rpx;
-  /*圆角边框*/
-}
-
-.myleft {
-  height: 80rpx;
-  width: 80rpx;
-}
-
-.mycenter {
-  font-size: 60rpx;
-  margin-left: 30rpx;
-}
-
-.myright {
-  height: 80rpx;
-  width: 80rpx;
-  margin-left: 240rpx;
-}
-
-/**index.wxss**/
+/* userinfo 的显示框 */
 .userinfo {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  margin: 0rpx 0rpx 31.25rpx 0rpx;
 }
 
-/*用户头像*/
+/* 用户头像后的黑条 */
+.userinfo-bar {
+  height: 62.5rpx;
+  width: 750rpx;
+  position: absolute;
+  background: #3CB371;
+  z-index: -1;
+}
+
+
+/* 用户头像 */
 .userinfo-avatar {
-  width: 180rpx;
-  height: 180rpx;
-  margin: 15rpx;
+  width: 250rpx;
+  height: 250rpx;
+  margin: 0rpx 31.25rpx 0rpx 62.5rpx;
   border-radius: 50%;
 }
 
-/*用户名*/
-.userinfo-nickname {
-  color: #A9A9A9;
-  font-size: 36rpx;
+/* 用户名和 ID 块 */
+.userinfo-name-and-id {
+  color: #393939;
+  margin: 0rpx 62.5rpx 0rpx 0rpx;
+  position: relative;
+  top: 31.25rpx;
 }
 
-/**app.wxss**/
-.boxMode2 {
-  height: 100%;
+/* 用户名或用户 ID */
+.userinfo-name, .userinfo-id {
+  width: 343.75rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.userinfo-name {
+  font-size: 46.875rpx;
+}
+
+.userinfo-id {
+  font-size: 23.45rpx;
+}
+
+/* 控制行 */
+.bar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 170rpx;
-  padding-bottom: 190rpx;
+  flex-direction: row;
   box-sizing: border-box;
-} 
+  align-items: center;
+  width: 625rpx;
+  height: 125rpx;
+  background-color: #F5F5F5;
+  padding: 31.25rpx;
+  margin: 31.25rpx 62.5rpx;
+  border-radius: 30rpx;
+}
+
+/* 控制行的图标 */
+.bar-icon {
+  height: 62.5rpx;
+  width: 62.5rpx;
+}
+
+/* 控制行的文本 */
+.bar-text {
+  flex: 1;
+  font-size: 46.875rpx;
+  margin-left: 31.25rpx;
+}
+
+/* 控制行的进入提示图标 */
+.bar-enter {
+  height: 62.5rpx;
+  width: 62.5rpx;
+}

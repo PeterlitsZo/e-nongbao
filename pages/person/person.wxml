@@ -1,23 +1,30 @@
 <!--pages/person/person.wxml-->
 <!--index.wxml-->
-<view class="boxMode2">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image  class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">ID:{{userInfo.nickName}}</text>
-    </block>
-  </view>
+<view class="userinfo-bar"></view>
+<view class="userinfo">
+  <!-- 如果没有得到用户信息则显示按钮以显式请求 -->
+  <button wx:if="{{!hasUserInfo && canIUse}}"
+    open-type="getUserInfo"
+    bindgetuserinfo="getUserInfo"
+  >登录</button>
+  <!-- 如果有用户信息则进行显示 -->
+  <block wx:else>
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <view class="userinfo-name-and-id">
+      <view class="userinfo-name">{{userInfo.nickName}}</view>
+      <view class="userinfo-id">UID: {{userInfo.nickName}}</view>
+    </view>
+  </block>
 </view>
 
-<view class='boxMode1'>
-  <image src="/images/Setting.png" class="myleft"></image>
-  <view class="mycenter">设置</view>
-  <image src="/images/Enter1.png" class="myright"></image>
+<view class='bar'>
+  <image src="/images/Setting.png" class="bar-icon"></image>
+  <view class="bar-text">设置</view>
+  <image src="/images/Enter1.png" class="bar-enter"></image>
 </view>
 
-<view class='boxMode1'>
-  <image src="/images/Question.png" class="myleft"></image>
-  <view class="mycenter">反馈</view>
-  <image src="/images/Enter1.png" class="myright"></image>
+<view class='bar'>
+  <image src="/images/Question.png" class="bar-icon"></image>
+  <view class="bar-text">反馈</view>
+  <image src="/images/Enter1.png" class="bar-enter"></image>
 </view>
