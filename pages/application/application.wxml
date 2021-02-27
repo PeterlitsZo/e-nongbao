@@ -1,1 +1,23 @@
-<!--pages/application/application.wxml-->
+<view class="boxMode0">
+  <view class="title0">财务与生活</view>
+  <view class="title0">农产品交易</view>
+  <view class="title0">求职与就业</view>
+</view>
+<view class="boxMode1">
+  <view class="title_border">
+    <view class="title1">财务与生活</view>
+  </view>
+  <view class="iconbox">
+    <image src="/application_icons/村情村貌.png" class="myicon"></image>
+  </view>
+</view>
+<view class="boxMode2">
+  <view class="title_border">
+    <view class="title1">农产品交易</view>
+  </view>
+</view>
+<view class="boxMode3">
+  <view class="title_border">
+    <view class="title1">求职与就业</view>
+  </view>
+</view>

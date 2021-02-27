@@ -1,15 +1,44 @@
 /* pages/application/application.wxss */
+.iconbox{
+  display: flex;
+  flex-direction: column;
+  height: 60rpx;
+  width: 40rpx;
+}
+.myicon{
+  height: 50rpx;
+  width: 50rpx;
+}
+.mylabel{
+  font-size: 20rpx;
+}
+
+.boxMode0 {
+  display: flex;
+  flex-direction: row;
+  width: 750rpx;
+  height: 75rpx;
+  border-top: 5rpx solid #A9A9A9;
+}
+
+.title0 {
+  font-size: 43rpx;
+  font-family: "FangSong";
+  margin-top: 16rpx;
+  margin-left: 20rpx;
+  margin-right: 13rpx;
+}
+
 .boxMode1 {
   width: 750rpx;
-  height: 500rpx;
+  height: 475rpx;
   border-top: 5rpx solid #A9A9A9;
-  border-bottom: 5rpx solid #A9A9A9;
 }
 
 .title_border {
   display: flex;
   flex-direction: row;
-  width: 235rpx;
+  width: 210rpx;
   height: 55rpx;
   background-color: #FAFAD2;
   padding-left: 5rpx;
@@ -18,7 +47,20 @@
   border-radius: 10rpx;
 }
 
-.title {
-  font-size: 45rpx;
+.title1 {
+  font-size: 40rpx;
   font-family: "FangSong";
+}
+
+.boxMode2 {
+  width: 750rpx;
+  height: 300rpx;
+  border-top: 5rpx solid #A9A9A9;
+}
+
+.boxMode3 {
+  width: 750rpx;
+  height: 200rpx;
+  border-top: 5rpx solid #A9A9A9;
+  border-bottom: 5rpx solid #A9A9A9;
 }
