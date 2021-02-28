@@ -1,3 +1,4 @@
+<!--pages/application/application.wxml-->
 <view class="boxMode0">
   <view class="title0">财务与生活</view>
   <view class="title0">农产品交易</view>
@@ -7,17 +8,86 @@
   <view class="title_border">
     <view class="title1">财务与生活</view>
   </view>
-  <view class="iconbox">
+  <view class="bar-icon">
     <image src="/application_icons/村情村貌.png" class="myicon"></image>
+    <image src="/application_icons/到村签到.png" class="myicon"></image>
+    <image src="/application_icons/工作汇报.png" class="myicon"></image>
+    <image src="/application_icons/信息发布.png" class="myicon"></image>
+  </view>
+  <view class="bar-name">
+    <view class="myname">村情村貌</view>
+    <view class="myname">到村签到</view>
+    <view class="myname">工作汇报</view>
+    <view class="myname">信息发布</view>
+  </view>
+  <view class="bar-icon">
+    <image src="/application_icons/村委工作评价.png" class="myicon"></image>
+    <image src="/application_icons/村民意见反馈.png" class="myicon"></image>
+    <image src="/application_icons/村民缴费.png" class="myicon"></image>
+    <image src="/application_icons/失物招领.png" class="myicon"></image>
+  </view>
+  <view class="bar-name">
+    <view class="myname">村委评价</view>
+    <view class="myname">意见反馈</view>
+    <view class="myname">村民缴费</view>
+    <view class="myname">失物招领</view>
+  </view>
+  <view class="bar-icon">
+    <image src="/application_icons/家电上门维修.png" class="myicon"></image>
+    <image src="/application_icons/好物共享专区.png" class="myicon"></image>
+    <image src="/application_icons/村医问诊.png" class="myicon"></image>
+    <image src="/application_icons/垃圾处理.png" class="myicon"></image>
+  </view>
+  <view class="bar-name">
+    <view class="myname">家电维修</view>
+    <view class="myname">好物共享</view>
+    <view class="myname">村医问诊</view>
+    <view class="myname">垃圾处理</view>
+  </view>
+  <view class="bar-icon">
+    <image src="/application_icons/防疫专区.png" style="margin-left:68.75rpx ;height: 50rpx; width: 50rpx; "></image>
+  </view>
+  <view class="bar-name">
+    <view class="myname" style="margin-left:37.5rpx">防疫专区</view>
   </view>
 </view>
 <view class="boxMode2">
   <view class="title_border">
     <view class="title1">农产品交易</view>
   </view>
+  <view class="bar-icon">
+    <image src="/application_icons/蔬菜豆制品.png" class="myicon"></image>
+    <image src="/application_icons/肉禽蛋.png" class="myicon"></image>
+  </view>
+  <view class="bar-name">
+    <view class="myname" style="margin-left:115rpx">蔬菜豆制品</view>
+    <view class="myname" style="margin-left:115rpx">肉禽蛋</view>
+  </view>
+  <view class="bar-icon">
+    <image src="/application_icons/水产.png" class="myicon"></image>
+    <image src="/application_icons/水果.png" class="myicon"></image>
+    <image src="/application_icons/特惠专区.png" class="myicon"></image>
+  </view>
+  <view class="bar-name">
+    <view class="myname" style="margin-left:100rpx">水产</view>
+    <view class="myname" style="margin-left:130rpx">水果</view>
+    <view class="myname" style="margin-left:105rpx">特惠专区</view>
+  </view>
 </view>
 <view class="boxMode3">
   <view class="title_border">
     <view class="title1">求职与就业</view>
+  </view>
+  <view class="bar-icon">
+    <image src="/application_icons/附近.png" class="myicon"></image>
+    <image src="/application_icons/急招.png" class="myicon"></image>
+    <image src="/application_icons/企业专区.png" class="myicon"></image>
+    <image src="/application_icons/个人匹配.png" class="myicon"></image>
+  </view>
+  <view class="bar-name">
+    <view class="myname" style="margin-left:67rpx">附近</view>
+    <view class="myname" style="margin-left:95rpx">急招</view>
+    <view class="myname" style="margin-left:75rpx">企业专区</view>
+    <view class="myname" style="margin-left:40rpx">个人匹配</view>
   </view>
 </view>
