@@ -1,2 +1,11 @@
 <!--pages/news/news.wxml-->
+<view class="news-head-bar"></view>
 
+<wxs src="./news.wxs" module="news_util" />
+
+<!-- 新闻条 -->
+<view wx:for="{{ news }}" wx:key="item" class="news-bar">
+  <text class="news-bar-title">{{ item.title }}</text>
+  <image src="{{ item.pic_addr }}" class="news-bar-img" />
+  <text class="news-bar-content">{{ news_util.omittedText(item.content) }}</text>
+</view>

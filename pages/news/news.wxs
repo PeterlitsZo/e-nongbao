@@ -1,0 +1,6 @@
+var omittedText = function(text) {
+  return text.slice(0, 30) + "..."
+};
+
+module.exports.omittedText = omittedText;
+

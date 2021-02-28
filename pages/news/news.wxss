@@ -1,1 +1,37 @@
 /* pages/news/news.wxss */
+
+/* 头部的黑条（出于美观） */
+.news-head-bar {
+  height: 62.5rpx;
+  width: 750rpx;
+  background: #3CB371;
+}
+
+/* 新闻条 */
+.news-bar {
+  box-sizing: border-box;
+  width: 625rpx;
+  border-radius: 31.25rpx;
+  padding: 31.25rpx;
+  margin: 31.25rpx 62.5rpx;
+  background-color: #F5F5F5;
+}
+
+/* 新闻条的标题 */
+.news-bar-title {
+  font-weight: 700;
+}
+
+/* 新闻条的图片 */
+.news-bar-img {
+  overflow: hidden;
+  width: 100%;
+  height: 300rpx;
+  margin: 15.625rpx 0rpx;
+  border-radius: 31.25rpx;
+}
+
+/* 新闻条的正文 */
+.news-bar-content {
+  font-size: 75%;
+}
