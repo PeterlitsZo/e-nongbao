@@ -1,1 +1,24 @@
 <!--pages/application/application.wxml-->
+<!--<view class="boxMode0">
+  <view class="title0">财务与生活</view>
+  <view class="title0">农产品交易</view>
+  <view class="title0">求职与就业</view>
+</view>-->
+<view class="application-head-bar"></view>
+
+<view wx:for="{{ applications }}" wx:key="applications">
+  <view class="applications-applications">
+    <view class="applications-applications-title">{{ index }}</view>
+    <view wx:for="{{ item }}" wx:for-item="atom_item" wx:key="application_groups"
+      class="applications-applications-item"
+    >
+      <image
+        src="{{ atom_item.pic_addr }}"
+        class="applications-applications-item-pic"
+      />
+      <view class="applications-applications-item-text">
+        {{ atom_item.title }}
+      </view>
+    </view>
+  </view>
+</view>
