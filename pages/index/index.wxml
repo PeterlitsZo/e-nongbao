@@ -21,8 +21,8 @@
   <view wx:for="{{ applications }}" wx:key="applications"
     class="index-applications-item"
   >
-    <text>[图标：待定]</text>
-    <text style="font-size: small;">{{ item.title }}</text>
+    <image class="index-applications-item-pic" src="{{ item.pic_addr }}" />
+    <text class="index-applications-item-text">{{ item.title }}</text>
   </view>
 </view>
 
