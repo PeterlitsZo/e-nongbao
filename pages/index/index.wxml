@@ -1,1 +1,33 @@
 <!--index.wxml-->
+
+<!-- 搜索框 -->
+<view class="index-head-bar" />
+<view class="index-sreach-bar">
+  <text class="index-sreach-bar-text">sreach...</text>
+  <image src="/images/Enter1.png" class="index-sreach-bar-enter"/>
+</view>
+<view class="index-head-placeholder"/>
+
+<!-- 文章轮播图 -->
+<swiper indicator-dots="true" autoplay="true" style="height:200px;">
+  <swiper-item wx:for="{{ news }}" wx:key="news">
+    <image src="{{ item.pic_addr }}" class="index-swiper-img" />
+    <text class="index-swiper-text">{{ item.title }}</text>
+  </swiper-item>
+</swiper>
+
+<!-- 常见应用 -->
+<view class="index-applications">
+  <view wx:for="{{ applications }}" wx:key="applications"
+    class="index-applications-item"
+  >
+    <text>[图标：待定]</text>
+    <text style="font-size: small;">{{ item.title }}</text>
+  </view>
+</view>
+
+<!-- “添加卡片”按钮 -->
+<view class="index-add-bar">
+  <text class="index-add-bar-text">添加更多卡片</text>
+  <image src="/images/Enter1.png" class="index-add-bar-enter"/>
+</view>

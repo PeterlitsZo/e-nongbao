@@ -1,2 +1,97 @@
 /**index.wxss**/
 
+/* 头部的黑条（出于美观） */
+.index-head-bar {
+  height: 93.75rpx;
+  width: 750rpx;
+  background: #3CB371;
+  position: fixed;
+  z-index: 1;
+}
+
+.index-head-placeholder {
+  height: 93.75rpx;
+  width: 750rpx;
+}
+
+/* 搜索框 */
+.index-sreach-bar {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+  width: 625rpx;
+  height: 125rpx;
+  padding: 31.25rpx;
+  margin: 31.25rpx 62.5rpx;
+  border-radius: 31.25rpx;
+  position: fixed;
+  z-index: 2;
+  background: rgba(0xF5, 0xF5, 0xF5, 0.5);
+  backdrop-filter: blur(10px) brightness(110%);
+}
+
+/* 搜索框，和添加卡片的文字提示 */
+.index-sreach-bar-text, .index-add-bar-text {
+  flex: 1;
+}
+
+/* 搜索框，和添加卡片的进入图标 */
+.index-sreach-bar-enter, .index-add-bar-enter {
+  height: 62.5rpx;
+  width: 62.5rpx;
+}
+
+/* 新闻条的图片 */
+.index-swiper-img {
+  overflow: hidden;
+}
+
+/* 新闻条的标题 */
+.index-swiper-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  color: white;
+  padding: 15.625rpx;
+  backdrop-filter: blur(10px) brightness(50%);
+}
+
+/* 常用应用 */
+.index-applications {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  grid-gap: 31.25rpx;
+  box-sizing: border-box;
+  align-items: center;
+  width: 625rpx;
+  margin: 31.25rpx 62.5rpx;
+  padding: 31.25rpx;
+  border-radius: 31.25rpx;
+  background-color: #F5F5F5;
+}
+
+.index-applications-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15.625rpx;
+  background-color: white;
+  text-align: center;
+}
+
+/* 添加卡片 */
+.index-add-bar {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+  width: 625rpx;
+  height: 125rpx;
+  padding: 31.25rpx;
+  margin: 31.25rpx 62.5rpx;
+  border-radius: 31.25rpx;
+  background-color: #F5F5F5;
+}
