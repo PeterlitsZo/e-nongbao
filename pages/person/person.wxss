@@ -3,12 +3,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 0rpx 0rpx 31.25rpx 0rpx;
+  margin: 0rpx 0rpx var(--mid-gap) 0rpx;
 }
 
 /* 用户头像后的黑条 */
 .userinfo-bar {
-  height: 93.75rpx;
+  /* 和 page/index/index.wxss 保持一致 */
+  height: calc(var(--mid-gap) + var(--max-gap));
   width: 750rpx;
   position: absolute;
   background: #3CB371;
@@ -18,34 +19,33 @@
 
 /* 用户头像 */
 .userinfo-avatar {
-  width: 250rpx;
-  height: 250rpx;
-  margin: 0rpx 31.25rpx 0rpx 62.5rpx;
+  width: calc(4 * var(--max-gap));
+  height: calc(4 * var(--max-gap));
+  margin: 0rpx var(--mid-gap);
   border-radius: 50%;
 }
 
 /* 用户名和 ID 块 */
 .userinfo-name-and-id {
   color: #393939;
-  margin: 0rpx 62.5rpx 0rpx 0rpx;
+  margin: 0rpx var(--mid-gap) 0rpx 0rpx;
   position: relative;
-  top: 31.25rpx;
+  top: var(--mid-gap);
 }
 
 /* 用户名或用户 ID */
 .userinfo-name, .userinfo-id {
-  width: 343.75rpx;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 .userinfo-name {
-  font-size: 46.875rpx;
+  font-size: var(--pic-gap);
 }
 
 .userinfo-id {
-  font-size: 23.45rpx;
+  font-size: calc(var(--pic-gap) / 2);
 }
 
 /* 控制行 */
@@ -54,29 +54,27 @@
   flex-direction: row;
   box-sizing: border-box;
   align-items: center;
-  width: 625rpx;
-  height: 125rpx;
+  width: calc(100% - 2 * var(--mid-gap));
   background-color: #F5F5F5;
-  padding: 31.25rpx;
-  margin: 31.25rpx 62.5rpx;
-  border-radius: 31.25rpx;
+  padding: var(--mid-gap);
+  margin: var(--mid-gap);
+  border-radius: var(--mid-gap);
 }
 
 /* 控制行的图标 */
 .bar-icon {
-  height: 62.5rpx;
-  width: 62.5rpx;
+  height: var(--pic-gap);
+  width: var(--pic-gap);
 }
 
 /* 控制行的文本 */
 .bar-text {
   flex: 1;
-  font-size: 46.875rpx;
-  margin-left: 31.25rpx;
+  margin-left: var(--mid-gap);
 }
 
 /* 控制行的进入提示图标 */
 .bar-enter {
-  height: 62.5rpx;
-  width: 62.5rpx;
+  height: var(--pic-gap);
+  width: var(--pic-gap);
 }
