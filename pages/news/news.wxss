@@ -2,7 +2,7 @@
 
 /* 头部的黑条（出于美观） */
 .news-head-bar {
-  height: 62.5rpx;
+  height: 93.75rpx;
   width: 750rpx;
   background: #3CB371;
 }

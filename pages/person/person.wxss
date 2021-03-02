@@ -8,7 +8,7 @@
 
 /* 用户头像后的黑条 */
 .userinfo-bar {
-  height: 62.5rpx;
+  height: 93.75rpx;
   width: 750rpx;
   position: absolute;
   background: #3CB371;
@@ -59,7 +59,7 @@
   background-color: #F5F5F5;
   padding: 31.25rpx;
   margin: 31.25rpx 62.5rpx;
-  border-radius: 30rpx;
+  border-radius: 31.25rpx;
 }
 
 /* 控制行的图标 */
